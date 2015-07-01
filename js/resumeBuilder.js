@@ -1,16 +1,16 @@
 var bio = {
     "name": "Abhinav Thukral",
     "role": "Web Developer",
-    "pictureURL": "images/me.jpg",
+    "pictureURL": "images/me.png",
     "welcomeMessage": "Hi, I am a Web Developer based out of Ottawa",
     "contacts":{
         "mobile": "613-555-5555",
         "email": "abhinav@abhinavthukral.com",
         "github": "abhinavthukral28",
-        "twitter": "thukralabhinav",
+        "twitter": "@thukralabhinav",
         "location": "Ottawa, Canada"
     },
-    "skills": ["programming", "JavaScript", "HTML5", "CSS", "Responsive Design"]
+    "skills": ["programming", "JavaScript", "HTML5", "CSS", "Responsive Design", "Java"]
 };
 
 var work = {
@@ -69,5 +69,39 @@ var projects = [
         "images": []
     }
 ];
+
+var formattedName = HTMLheaderName.replace("%data%", bio.name);
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+var formattedPic = HTMLbioPic.replace("%data%", bio.pictureURL);
+var formattedWelcome = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+var formattedContact = [
+    HTMLemail.replace("%data%", bio.contacts.email),
+    HTMLgithub.replace("%data%", bio.contacts.github),
+    HTMLtwitter.replace("%data%", bio.contacts.twitter),
+    HTMLlocation.replace("%data%", bio.contacts.location)
+
+];
+$("#header").prepend(formattedRole);
+$("#header").prepend(formattedName);
+$("#header").append(formattedPic);
+$("#header").append(formattedWelcome);
+$("#topContacts").append(formattedContact);
+$("#footerContacts").append(formattedContact);
+if(bio.skills.length > 0){
+    $("#header").append(HTMLskillsStart);
+    for(var skill in bio.skills){
+        var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
+        $("#skills").append(formattedSkill);
+    }
+}
+$("#workExperience").append(HTMLworkStart);
+for(job in work.jobs){
+    var formattedEmployer = HTMLworkEmployer.replace("%data%",work.jobs[job].employer);
+    $("#workExperience").append(formattedEmployer);
+    var formattedWorkTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+    $("#workExperience").append(formattedWorkTitle);
+
+}
+
 
 
