@@ -48,6 +48,9 @@ h2, h3, h4, h5 {
   padding-right: 5%;
 }
 
+.img-circle {
+  border-radius: 50%;
+}
 
 .date-text {
   font-style: italic;
@@ -126,6 +129,9 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
+}
+.flex-box-col{
+    flex-direction: column;
 }
 
 .center-content {
