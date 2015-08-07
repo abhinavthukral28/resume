@@ -18,14 +18,14 @@ var work = {
         {
             "employer": "Espial Group Inc",
             "title": "Software Developer Coop",
-            "location": "Ottawa",
+            "location": "Ottawa, Canada",
             "dates": "January 2014 to August 2014",
             "description": "Customized ‘Jasmine’ JavaScript Unit Testing Framework to as per the needs of the company leading to automation of testing process of JavaScript Middleware - Extended the functionality of company’s JavaScript Middleware API - Wrote programs in Java to automate the process of download of simulation data from the internet"
         },
         {
             "employer": "Bright Land School",
             "title": "Systems Administrator",
-            "location": "Amritsar",
+            "location": "Amritsar, India",
             "dates": "July 2013 to August 2013, May 2015 to July 2015",
             "description": "Installed a Linux based Virtual Private Server to host school’s growing web services - Applied HTML and CSS skills to redesign the school website (In Progress) - Trained the staff members to use the new school learning management software"
         }
@@ -36,7 +36,7 @@ var education = {
     "schools": [
         {
             "name": "Carleton University",
-            "location": "Ottawa",
+            "location": "Ottawa, Canada",
             "degree": "Bachelor of Computer Science",
             "majors": [
                 "Computer Science"
@@ -47,7 +47,7 @@ var education = {
     ],
     "onlineCourses": [
         {
-            "title": "Front End D eveloper Nanodegree",
+            "title": "Front End Developer Nanodegree",
             "school": "Udacity",
             "dates": "May 2015 to Present",
             "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
@@ -100,21 +100,18 @@ education.display = function () {
             var formattedSchoolMajors = HTMLschoolMajor.replace("%data%", education.schools[school].majors[i]);
             $(".education-entry:last").append(formattedSchoolMajors);
         }
-
     }
 
-    ("#education").append(HTMLonlineClasses);
+    $("#education").append(HTMLonlineClasses);
     for(var c in education.onlineCourses){
-        ("#education").append(HTMLschoolStart);
+        $("#education").append(HTMLschoolStart);
         var formattedOnlineName = HTMLonlineTitle.replace("%data%",education.onlineCourses[c].title).replace("#", education.onlineCourses[c].url);
-        $(".education-entry:last").append(formattedOnlineName);
         var formattedOnlineSchool = HTMLonlineSchool.replace("%data%",education.onlineCourses[c].school);
-        $(".education-entry:last").append(formattedOnlineSchool);
-        var formattedOnlineDates = HTMLonlineDates,replace("%data%", education.onlineCourses[c].dates);
-        $(".education-entry:last").append(formattedOnlineSchool);
-        var formattedOnlineDates = HTMLonlineDates,replace("%data%", education.onlineCourses[c].dates);
-
-
+        $(".education-entry:last").append(formattedOnlineName + formattedOnlineSchool);
+        var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[c].dates);
+        $(".education-entry:last").append(formattedOnlineDates);
+        var formattedOnlineUrl= HTMLonlineURL.replace("%data%", education.onlineCourses[c].url);
+        $(".education-entry:last").append(formattedOnlineUrl);
 
     }
 }
@@ -161,4 +158,5 @@ work.display = function() {
 work.display();
 projects.display();
 education.display();
+$("#mapDiv").append(googleMap);
 
