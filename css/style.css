@@ -15,7 +15,7 @@
 
 h1 {
   font-size: 40px;
-  color: #F5A623;
+  color: #FFFFFF;
   line-height: 48px;
   display: inline;
   margin: 0;
@@ -24,7 +24,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999999;
+  color: #727272;
   line-height: 29px;
   padding: 10px;
   margin: 0;
@@ -80,7 +80,7 @@ p {
 }
 
 a {
-  color: #1199C3;
+  color: #673AB7;
   text-decoration: none;
   margin-top: 10px;
   display: block;
@@ -89,21 +89,21 @@ a {
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #F3F3F3;
+  color: #FFFFFF;
   line-height: 28px;
 }
 
 #skillsH3 {
-  color: #F5AE23;
+  color: #FFFFFF;
   display: none;
 }
 
 .orange {
-  background-color: #F5AE23;
+  background-color: #FFFFFF;
 }
 
 .orange-text {
-  color: #F5AE23;
+  color: #FFFFFF;
 }
 
 .white-text {
@@ -123,7 +123,11 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color:#673AB7;
+    text-align: center;
+}
+hr{
+    margin: 15px;
 }
 
 .flex-box {
@@ -152,7 +156,7 @@ ul {
 .biopic {
   float: left;
   padding: 10px;
-  width: 200px;
+  width: 250px;
   display: none;
 }
 
@@ -178,6 +182,7 @@ span {
 
 #letsConnect {
   text-align: center;
+  background-color: #673AB7;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -188,7 +193,7 @@ span {
 
 @media only screen and (max-width:900px) {
   .biopic {
-    width: 175px;
+    width: 250px;
   }
 }
 
@@ -222,4 +227,12 @@ span {
   .biopic {
     display: block;
   }
+}
+
+#letsConnect > h2{
+    color: #FFFFFF;
+}
+
+.subtitle{
+    color: #FFFFFF;
 }
