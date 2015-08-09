@@ -57,7 +57,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <meta name="viewport" content="width=device-width">
 </head>
 <body unresolved>
-  <div id="main">
+<div class="container-fluid">  <div id="main" class="row">
 
     <!--
     Everything from here to the <script> tag below is the skeleton of your
@@ -65,10 +65,10 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     resume below. You can pretty easily figure out what each section will
     display by looking at the id or at what's written between the <h2> tags.
     -->
-    <div id="header" class="center-content clearfix card-panel">
+    <div id="header" class="center-content clearfix z-depth-1">
       <ul id="topContacts" class='flex-box'></ul>
     </div>
-    <div style='clear: both;'></div>
+    <div class="row"><div class="col s12 m10 l8 offset-m1 offset-l2"><div style='clear: both;'></div>
     <div id="workExperience" class="card-panel">
       <h2>Work Experience</h2>
     </div>
@@ -78,15 +78,15 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     <div id="education" class="card-panel">
       <h2>Education</h2>
     </div>
-    <div id="mapDiv" class="card-panel">
+    <div id="mapDiv">
       <h2>Where I've Lived and Worked</h2>
-    </div>
-    <div id="letsConnect" class="card-panel">
+    </div></div></div>
+    <div id="letsConnect">
       <h2 class='center-text'>Let's Connect</h2>
         <ul id="footerContacts" class="flex-box">
       </ul>
     </div>
-  </div>
+  </div></div>
 
 
   <!--
