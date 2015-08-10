@@ -1,239 +1,275 @@
 * {
-  padding:0;
-  margin:0;
-  font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .clearfix {
-  overflow: auto;
+    overflow: auto;
 }
 
 .education-entry, .work-entry, .project-entry {
-  padding-left: 5%;
-  padding-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 h1 {
-  font-size: 40px;
-  color: #FFFFFF;
-  line-height: 48px;
-  display: inline;
-  margin: 0;
+    font-size: 40px;
+    color: #FFFFFF;
+    line-height: 48px;
+    display: inline;
+    margin: 0;
 }
 
 h2 {
-  font-weight: bold;
-  font-size: 24px;
-  color: #727272;
-  line-height: 29px;
-  padding: 10px;
-  margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+    color: #727272;
+    line-height: 29px;
+    padding: 10px;
+    margin: 0;
 }
 
 h3 {
-  font-style: italic;
-  font-size: 20px;
-  color: #000000;
-  line-height: 22px;
-  margin: 0;
+    font-style: italic;
+    font-size: 20px;
+    color: #000000;
+    line-height: 22px;
+    margin: 0;
 }
 
 h4 {
-  font-weight: bold;
-  font-size: 14px;
-  color: #4A4A4A;
-  line-height: 17px;
-  margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+    color: #4A4A4A;
+    line-height: 17px;
+    margin: 0;
 }
 
 h2, h3, h4, h5 {
-  padding:10px;
-  padding-left: 5%;
-  padding-right: 5%;
+    padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .img-circle {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 .date-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999999;
-  line-height: 16px;
-  float: left;
+    font-style: italic;
+    font-size: 14px;
+    color: #999999;
+    line-height: 16px;
+    float: left;
 }
 
 .location-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999999;
-  line-height: 16px;
-  float: right;
+    font-style: italic;
+    font-size: 14px;
+    color: #999999;
+    line-height: 16px;
+    float: right;
 
 }
 
 p {
-  font-size: 14px;
-  color: #333333;
-  line-height: 21px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 21px;
 }
 
 a {
-  color: #673AB7;
-  text-decoration: none;
-  margin-top: 10px;
-  display: block;
+    color: #673AB7;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
 }
 
 .welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  color: #FFFFFF;
-  line-height: 28px;
+    font-style: italic;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 28px;
 }
 
 #skillsH3 {
-  color: #FFFFFF;
-  display: none;
+    color: #FFFFFF;
+    display: none;
 }
 
 .orange {
-  background-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 .orange-text {
-  color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .white-text {
-  font-weight: bold;
-  color: #FFFFFF;
+    font-weight: bold;
+    color: #FFFFFF;
 }
 
 .gray {
-  background-color: #F3F3F3;
-  padding-bottom: 10px;
-  clear:both;
+    background-color: #F3F3F3;
+    padding-bottom: 10px;
+    clear: both;
 }
 
 .dark-gray {
-  background-color: #4A4A4A;
+    background-color: #4A4A4A;
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color:#673AB7;
-    text-align: center;
-    margin-bottom: 20px;
+    background-color: #673AB7;
+    text-align: left;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    margin-bottom: -80px;
+    padding-bottom: 180px;
 }
-hr{
+
+hr {
     margin: 15px;
 }
 
 .flex-box {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
 }
-.flex-box-col{
-    flex-direction: column;
+
+.flex-box-col {
+    flex-direction: row;
 }
 
 .center-content {
-  padding-top: 2.5%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 2.5%
+    padding-top: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2.5%
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 .biopic {
-  float: left;
-  padding: 10px;
-  width: 200px;
-  display: none;
+    float: left;
+    padding: 10px;
+    margin-left: 15px;
+    width: 200px;
+    display: none;
 }
 
 img {
-  padding: 10px;
+    padding: 10px;
 }
 
 /* Bar chart stuff */
 .chart div {
-  font: 10px sans-serif;
-  background-color: #4A4A4A;
-  text-align: right;
-  padding: 3px;
-  margin: 1px;
-  height: 12px;
-  color: white;
-  display: inline-block;
+    font: 10px sans-serif;
+    background-color: #4A4A4A;
+    text-align: right;
+    padding: 3px;
+    margin: 1px;
+    height: 12px;
+    color: white;
+    display: inline-block;
 }
 
 span {
-  padding: 5px;
+    padding: 5px;
 }
 
 #letsConnect {
-  text-align: center;
-  background-color: #673AB7;
+    text-align: center;
+    background-color: #673AB7;
 }
 
 @media only screen and (max-width: 1024px) {
-  #letsConnect {
-    margin-top: 5%;
-  }
+    #letsConnect {
+        margin-top: 5%;
+    }
 }
 
-@media only screen and (max-width:900px) {
-  .biopic {
-    width: 250px;
-  }
+@media only screen and (max-width: 900px) {
+    .biopic {
+        width: 200px;
+    }
 }
 
 @media only screen and (max-width: 750px) {
-  #letsConnect {
-    margin-top: 10%;
-  }
-  .biopic {
-    width: 150px;
-  }
-  .welcome-message {
-    display: none;
-  }
+    #letsConnect {
+        margin-top: 10%;
+    }
+
+    .biopic {
+        width: 150px;
+    }
+
+    .welcome-message {
+        display: none;
+    }
+
+    #header {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
 }
 
 #map {
-  display: block;
-  height: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
+    display: block;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
+    height: 400px;
+    width: 100%;
+    padding-bottom: 5%;
 }
 
 @media only screen and (min-width: 750px) {
-  #skillsH3,
-  .biopic {
+    #skillsH3,
+    .biopic {
+        display: block;
+    }
+
+}
+
+#letsConnect > h2 {
+    color: #FFFFFF;
+}
+
+.subtitle {
+    color: #FFFFFF;
+}
+
+.responsive-img {
     display: block;
-  }
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#letsConnect > h2{
-    color: #FFFFFF;
+.rounded-corners {
+    border-radius: 10%;
 }
 
-.subtitle{
-    color: #FFFFFF;
+.nav-wrapper {
+    background-color: #673AB7;
+    padding: 0;
+    margin-left: 20px;
+    color: #673AB7;
+}
+
+nav {
+    background-color: #673AB7;
+
 }
